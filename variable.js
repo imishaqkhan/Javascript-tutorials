@@ -1,9 +1,9 @@
 
 
 const accountId = 123456
-accountcity = "swabi"
-accountPassword = "3434"
-accountEmail = "ishaq@gmail.com"
-console.log(accountId);
+let accountcity = "swabi"
+let accountPassword = "3434"
+ let accountEmail = "ishaq@gmail.com"
+let accountState;
 
-console.table([accountEmail, accountPassword, accountId, accountcity] )
+console.table([accountEmail, accountPassword, accountId, accountcity, accountState] )
