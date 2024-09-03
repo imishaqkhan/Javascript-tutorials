@@ -3,13 +3,28 @@
 <body>
 	<h1>JavaScript Variables </h1>
 
+	<p id="p0"></p>
 	<p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
 	
 	<script>
 		const person = { name: 'ishaq'};
 		person.name = "ishaqkhan";
 
-		document.getElementById("p1").innerHTML = person.name;
-    </script>
+
+        let greet = "Hello " // global variable
+		
+		function myfunction(){
+			let msg = "JavaScript!"; //local variable
+
+			document.getElementById("p1").innerHTML = greet + msg; 
+		}
+      
+		myfunction();
+		document.getElementById("p0").innerHTML = person.name;
+		document.getElementById("p2").innerHTML = greet;
+		document.getElementById("p3").innerHTML = msg;  
+   </script>
 </body>
 </html>
